@@ -1,0 +1,23 @@
+#include <stdio.h>
+
+int main() {
+    int x = 10;
+    int y = 20;
+    
+    
+    int z = x + y
+    
+    
+    printf("结果: %d\n", result);
+    
+    
+    if (x > y {
+        printf("x大于y\n");
+    }
+    
+    
+    char ch = 'a';
+    printf("字符: %c\n", ch);
+    
+    return 0;
+}

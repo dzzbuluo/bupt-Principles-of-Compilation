@@ -1,0 +1,71 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+
+
+int global_counter = 0;        
+const float PI = 3.14159f;     
+
+
+int calculate_sum(int a, int b);
+void print_array(int arr[], int size);
+int factorial(int n);
+
+
+int main() {
+    
+    int num1 = 10, num2 = 20;           
+    float result = 0.0f;                
+    char message[] = "Hello World!";    
+    
+    
+    int sum = calculate_sum(num1, num2);
+    
+    
+    result = (float)sum /2.0f;         
+    global_counter++;                   
+    
+    
+    if (result > 15.0f) {
+        printf("结果大于15: %.2f\n", result);
+    } else {
+        printf("结果小于等于15: %.2f\n", result);
+    }
+    
+    
+    for (int i = 0; i < 5; i++) {
+        printf("循环次数: %d\n", i);
+    }
+    
+    
+    int numbers[] = {1, 2, 3, 4, 5};
+    print_array(numbers, 5);
+    
+    
+    int fact = factorial(5);
+    printf("5的阶乘: %d\n", fact);
+    
+    return 0;  
+}
+
+
+int calculate_sum(int a, int b) {
+    return a + b;  
+}
+
+
+void print_array(int arr[], int size) {
+    printf("数组元素: ");
+    for (int i = 0; i < size; i++) {
+        printf("%d ", arr[i]);
+    }
+    printf("\n");
+}
+
+
+int factorial(int n) {
+    if (n <= 1) {
+        return 1;  
+    }
+    return n * factorial(n - 1);  
+}

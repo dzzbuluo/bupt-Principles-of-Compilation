@@ -1,0 +1,64 @@
+﻿2:1	KEYWORD     	int
+2:5	IDENT       	main
+2:9	DELIM       	(
+2:10	DELIM       	)
+2:12	DELIM       	{
+3:5	KEYWORD     	int
+3:9	IDENT       	a
+3:11	OP          	=
+3:13	NUMBER      	10
+3:15	DELIM       	,
+3:17	IDENT       	b
+3:19	OP          	=
+3:21	NUMBER      	20
+3:23	DELIM       	;
+6:5	KEYWORD     	if
+6:8	DELIM       	(
+6:9	IDENT       	a
+6:11	OP          	+
+6:13	IDENT       	b
+6:15	OP          	>=
+6:18	NUMBER      	30
+6:20	DELIM       	)
+6:22	DELIM       	{
+7:9	IDENT       	a
+7:10	OP          	++
+7:12	DELIM       	;
+8:5	DELIM       	}
+8:7	KEYWORD     	else
+8:12	DELIM       	{
+9:9	IDENT       	b
+9:11	OP          	-=
+9:14	NUMBER      	5
+9:15	DELIM       	;
+10:5	DELIM       	}
+11:5	KEYWORD     	char
+11:10	IDENT       	c
+11:12	OP          	=
+11:16	CHAR        	<char>
+11:17	DELIM       	;
+12:5	KEYWORD     	const
+12:11	KEYWORD     	char
+12:15	OP          	*
+12:17	IDENT       	s
+12:19	OP          	=
+12:35	STRING      	<str>
+12:36	DELIM       	;
+13:5	KEYWORD     	return
+13:12	IDENT       	a
+13:14	OP          	+
+13:16	IDENT       	b
+13:17	DELIM       	;
+14:1	DELIM       	}
+
+==== Summary ====
+Lines=16
+Chars=226
+Keywords=8
+Idents=11
+Numbers=4
+Strings=1
+CharsLit=1
+Ops=10
+Delims=17
+Errors=0

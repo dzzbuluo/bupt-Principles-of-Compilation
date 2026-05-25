@@ -1,0 +1,23 @@
+#include <stdio.h>
+
+int main() {
+    int x = 10;
+    int y = 20;
+    
+    // 语法错误：缺少分号
+    int z = x + y
+    
+    // 语法错误：未声明的变量
+    printf("结果: %d\n", result);
+    
+    // 语法错误：括号不匹配
+    if (x > y {
+        printf("x大于y\n");
+    }
+    
+    // 语法错误：错误的字符
+    char ch = 'a';
+    printf("字符: %c\n", ch);
+    
+    return 0;
+}

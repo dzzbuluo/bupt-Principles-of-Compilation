@@ -1,0 +1,75 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+
+// 全局变量定义
+int global_counter = 0;        // 全局计数器
+const float PI = 3.14159f;     // 圆周率常量
+
+// 函数声明
+int calculate_sum(int a, int b);
+void print_array(int arr[], int size);
+int factorial(int n);
+
+// 主函数
+int main() {
+    // 局部变量声明
+    int num1 = 10, num2 = 20;           // 两个整数变量
+    float result = 0.0f;                // 浮点数结果
+    char message[] = "Hello World!";    // 字符串数组
+    
+    // 单行注释：调用函数计算两数之和
+    int sum = calculate_sum(num1, num2);
+    
+    /* 
+     * 多行注释：
+     * 这是一个复杂的计算过程
+     * 包含多个步骤
+     */
+    result = (float)sum / 2.0f;         // 类型转换
+    global_counter++;                   // 递增全局计数器
+    
+    // 条件判断
+    if (result > 15.0f) {
+        printf("结果大于15: %.2f\n", result);
+    } else {
+        printf("结果小于等于15: %.2f\n", result);
+    }
+    
+    // 循环结构
+    for (int i = 0; i < 5; i++) {
+        printf("循环次数: %d\n", i);
+    }
+    
+    // 数组操作
+    int numbers[] = {1, 2, 3, 4, 5};
+    print_array(numbers, 5);
+    
+    // 递归函数调用
+    int fact = factorial(5);
+    printf("5的阶乘: %d\n", fact);
+    
+    return 0;  // 程序正常结束
+}
+
+// 计算两数之和的函数
+int calculate_sum(int a, int b) {
+    return a + b;  // 返回两数之和
+}
+
+// 打印数组元素的函数
+void print_array(int arr[], int size) {
+    printf("数组元素: ");
+    for (int i = 0; i < size; i++) {
+        printf("%d ", arr[i]);
+    }
+    printf("\n");
+}
+
+// 计算阶乘的递归函数
+int factorial(int n) {
+    if (n <= 1) {
+        return 1;  // 递归终止条件
+    }
+    return n * factorial(n - 1);  // 递归调用
+}
